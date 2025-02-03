@@ -10,6 +10,6 @@ interface Car {
   costPerDay: string;
   location: string;
   available: boolean;
-  createAt: Date;
+  createAt?: Date;
   id: string;
 }

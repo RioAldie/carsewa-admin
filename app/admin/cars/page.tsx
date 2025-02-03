@@ -1,6 +1,9 @@
 import React from 'react';
 import { Button } from '@/components/ui/button';
 import Link from 'next/link';
+import { DataTable } from '@/components/admin/cars/DataTable';
+import { columns } from './column';
+import { cars } from '@/lib/dummy';
 
 const Page = () => {
   return (
@@ -15,7 +18,7 @@ const Page = () => {
       </div>
 
       <div className="mt-7 w-full overflow-hidden">
-        <p>Table</p>
+        <DataTable columns={columns} data={cars.data} />
       </div>
     </section>
   );
